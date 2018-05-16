@@ -8,6 +8,10 @@ app.get('/', function (req, res) {
   res.render('index')
 })
 
+app.get('/location', function (req, res) {
+  res.render('location')
+})
+
 app.listen(80, function () {
-  console.log('Example app listening on port 80!')
+  console.log('App listening on port 80!')
 })

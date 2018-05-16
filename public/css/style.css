@@ -5,7 +5,7 @@ html {
 nav {
   max-width: 960px;
   margin: auto;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 nav ul {
@@ -36,11 +36,12 @@ body {
   width: 800px;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
   background:
   /* top, transparent red, faked with gradient */
     linear-gradient(
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
+      rgba(0, 0, 0, 0.60),
+      rgba(0, 0, 0, 0.60)
     ),
    url('/assets/images/proposal.jpg');
   background-position: center center;
@@ -49,10 +50,6 @@ body {
 .container {
   width: 600px;
   margin: 0 auto;
-}
-
-p {
-  color: #E64A19;
 }
 
 .gold {
