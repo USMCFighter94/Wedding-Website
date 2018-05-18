@@ -64,3 +64,9 @@ footer {
 .gold {
     color: #ffcd00;
 }
+
+.selected {
+   pointer-events: none;
+   cursor: default;
+   color: white;
+}
