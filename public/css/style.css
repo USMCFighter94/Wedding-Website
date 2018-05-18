@@ -47,6 +47,10 @@ body {
   background-position: center center;
 }
 
+footer {
+  color: #FFF;
+}
+
 .container {
   width: 600px;
   margin: 0 auto;

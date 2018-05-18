@@ -9,9 +9,9 @@ app.get('/', function (req, res) {
 })
 
 app.get('/location', function (req, res) {
-  res.render('location')
+  res.render('location', { title: 'Location' })
 })
 
-app.listen(80, function () {
+app.listen(3000, function () {
   console.log('App listening on port 80!')
 })
