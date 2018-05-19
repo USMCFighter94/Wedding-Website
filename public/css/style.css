@@ -46,6 +46,7 @@ body {
     ),
    url('/assets/images/proposal.jpg');
   background-position: center center;
+  background-size:cover;
 }
 
 footer {
