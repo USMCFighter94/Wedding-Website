@@ -1,29 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Brevitz-Stein Wedding</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet'>
-</head>
+<% include templates/head %>
 <body>
-    <nav>
-        <ul>
-            <li>
-                <select id="details">
-                    <option value="0">Details</option>
-                    <option value="ceremony">Ceremony</option>
-                    <option value="reception">Reception</option>
-                </select>
-            </li>
-            <li><a href="/accomadations">Accomadations</a></li>
-            <li><a href="/">Home</a></li>
-            <li><a href="/rsvp">RSVP</a></li>
-            <li><a href="/registry">Registry</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-    </div>
+  <% include templates/nav %>
+  <div class="container">
+    <h2>The Wedding of Colin Brevitz and Samantha Stein takes place in</h2>
+    <h1 id="wedding-timer"></h1>
+  </div>
+  <% include templates/footer %>
+  <script type='text/javascript' src='/scripts/timer.js'></script>
 </body>
 </html>

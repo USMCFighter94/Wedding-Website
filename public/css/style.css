@@ -29,12 +29,13 @@ nav ul li a {
 nav ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
   background: rgba(255, 255, 255, 0.1);
-  color: #000;
+  color: black;
 }
 
 body {
   width: 800px;
   margin: 0 auto;
+  color: white;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   background:
@@ -45,6 +46,16 @@ body {
     ),
    url('/assets/images/proposal.jpg');
   background-position: center center;
+  background-size:cover;
+}
+
+footer {
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .container {
@@ -54,4 +65,26 @@ body {
 
 .gold {
     color: #ffcd00;
+}
+
+.selected {
+   pointer-events: none;
+   cursor: default;
+   color: white;
+}
+
+#wedding-timer {
+  font-size: 4.5em;
+  margin-top: 0;
+}
+
+.rule {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 15px 0;
+}
+
+p a {
+  color: white;
+  text-decoration: none;
 }

@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Location | Brevitz-Stein Wedding</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet'>
+  <% include templates/head %>
 </head>
 <body>
-    <div class="container">
-        <h1>Location</h1>
-        <p>The wedding ceremony will be held at Chapel Hill United Methodist Church,<br>located at<br>
-            157 Chapel Hill Dr,<br>
-            Battle Creek, MI, 49015</p>
+  <% include templates/nav %>
+  <div class="container">
+    <h1>Location</h1>
+    <div>
+      <p>The ceremony will be held at Chapel Hill United Methodist Church,<br>located at<br>
+        157 Chapel Hill Dr,<br>
+        Battle Creek, MI, 49015
+      </p>
+
+      <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2951.4859893654793!2d-85.1857749!3d42.2894945!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8817ee00e79fdb63%3A0x444cd65d736b84dc!2s157+Chapel+Hill+Dr%2C+Battle+Creek%2C+MI+49015!5e0!3m2!1sen!2sus!4v1427373210812" width="100%" height="350" frameborder="0"></iframe>
+      <p><a href="https://www.google.com/maps/place/157+Chapel+Hill+Dr,+Battle+Creek,+MI+49015/@42.2897254,-85.1870187,17z/data=!3m1!4b1!4m5!3m4!1s0x8817ee016cf41c13:0x1b3f105e49cf0f97!8m2!3d42.2897215!4d-85.18483?hl=en">View larger map</a></p>
     </div>
+
+    <div class="rule">&nbsp;</div>
+  </div>
+  <% include templates/footer %>
 </body>
 </html>
