@@ -1,21 +1,21 @@
 <nav>
     <ul>
-      <li class="dropdown">
-        <a <%= typeof title != 'undefined' && (title == 'Ceremony' || title == 'Reception') ? 'class=selected' : '' %>class="dropbtn">Details</a>
-        <div class="dropdown-content">
-          <a href="/ceremony">Ceremony</a>
-          <a href="/reception">Reception</a>
-        </div>
-      </li>
-      <li class="dropdown">
-          <a <%= typeof title != 'undefined' && (title == 'Hotels' || title == 'Directions') ? 'class=selected' : '' %>class="dropbtn">Accomadations</a>
-          <div class="dropdown-content">
-            <a href="/hotels">Hotels</a>
-            <a href="/directions">Directions</a>
-          </div>
-      </li>
-      <li><a <%= typeof title == 'undefined' ? 'class=selected' : '' %> href="/">Home</a></li>
-      <li><a <%= typeof title != 'undefined' && title == 'RSVP' ? 'class=selected' : '' %> href="/rsvp">RSVP</a></li>
-      <li><a <%= typeof title != 'undefined' && title == 'Registry' ? 'class=selected' : '' %> href="/registry">Registry</a></li>
+        <li class="dropdown">
+            <a <%= typeof title != 'undefined' && (title == 'Ceremony' || title == 'Reception') ? 'class=selected' : '' %>class="dropbtn">Details</a>
+            <div class="dropdown-content">
+                <a href="/ceremony">Ceremony</a>
+                <a href="/reception">Reception</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a <%= typeof title != 'undefined' && (title == 'Hotels' || title == 'Directions') ? 'class=selected' : '' %>class="dropbtn">Accomadations</a>
+            <div class="dropdown-content">
+                <a href="/hotels">Hotels</a>
+                <a href="/directions">Directions</a>
+            </div>
+        </li>
+        <li><a <%= typeof title == 'undefined' ? 'class=selected' : '' %> href="/">Home</a></li>
+        <li><a <%= typeof title != 'undefined' && title == 'RSVP' ? 'class=selected' : '' %> href="/rsvp">RSVP</a></li>
+        <li><a <%= typeof title != 'undefined' && title == 'Registry' ? 'class=selected' : '' %> href="/registry">Registry</a></li>
     </ul>
 </nav>
