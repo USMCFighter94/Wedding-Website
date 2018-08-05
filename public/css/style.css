@@ -84,7 +84,6 @@ footer {
 }
 
 .container {
-    width: 600px;
     margin: 0 auto;
 }
 
@@ -163,4 +162,19 @@ p a {
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+#index-left {
+    float: left;
+    width: 66%;
+}
+
+#index-left > p {
+    margin: auto;
+    width: 90%;
+}
+
+#index-right {
+    float: right;
+    width: 34%;
 }
