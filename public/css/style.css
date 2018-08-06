@@ -1,5 +1,5 @@
 html {
-    background-color: black;
+    background-color: white;
     height:100%;
 }
 
@@ -69,13 +69,13 @@ This class makes the topnav look good on small screens (display the links vertic
 
 body {
     margin: 0 auto;
-    color: white;
+    color: black;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
 
 footer {
-    color: white;
+    color: black;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -94,7 +94,7 @@ footer {
 .selected {
     pointer-events: none;
     cursor: default;
-    color: white;
+    color: black;
 }
 
 .imgbox {
@@ -177,4 +177,24 @@ p a {
 #index-right {
     float: right;
     width: 34%;
+}
+
+#fiftyfifty-left {
+    float: left;
+    width: 50%;
+}
+
+#fiftyfifty-left > p {
+    margin: auto;
+    width: 90%;
+}
+
+#fiftyfifty-right {
+    float: right;
+    width: 50%;
+}
+
+#fiftyfifty-right > p {
+    margin: auto;
+    width: 90%;
 }
