@@ -16,6 +16,10 @@ app.get('/reception', function (req, res) {
   res.render('reception', { title: 'Reception' })
 })
 
+app.get('/information', function (req, res) {
+  res.render('information', { title: 'Information' })
+})
+
 app.get('/accomadations', function (req, res) {
   res.render('accomadations', { title: 'Accomadations' })
 })
@@ -33,5 +37,5 @@ app.get('/location', function (req, res) {
 })
 
 app.listen(3000, function () {
-  console.log('App listening on port 80!')
+  console.log('App listening on port 3000!')
 })

@@ -20,7 +20,7 @@ nav ul li a {
     padding: 18px;
     font-family: 'Roboto', sans-serif;
     text-transform:uppercase;
-    color: #ffcd00;
+    color: black;
     font-size: 18px;
     text-decoration: none;
     display: block;
@@ -29,7 +29,7 @@ nav ul li a {
 nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
     background: rgba(255, 255, 255, 0.1);
-    color: black;
+    color: #ffcd00;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
@@ -122,6 +122,10 @@ footer {
 p a {
     color: white;
     text-decoration: none;
+}
+
+.black-link {
+    color: black;
 }
 
 /* Stuff added for dropdown */
