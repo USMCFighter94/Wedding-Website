@@ -1,9 +1,9 @@
 <nav>
     <ul>
         <li><a <%= typeof title != 'undefined' && title == 'Information' ? 'class=selected' : '' %>href="/information">Information</a></li>
-        <li><a <%= typeof title != 'undefined' && title == 'Accomadations' ? 'class=selected' : '' %>href="/accomadations">Accomadations</a></li>
-        <li><a <%= typeof title == 'undefined' ? 'class=selected' : '' %> href="/">Home</a></li>
         <li><a <%= typeof title != 'undefined' && title == 'Registry' ? 'class=selected' : '' %> href="/registry">Registry</a></li>
+        <li><a <%= typeof title == 'undefined' ? 'class=selected' : '' %> href="/">Home</a></li>
+        <li><a <%= typeof title != 'undefined' && title == 'Accomadations' ? 'class=selected' : '' %>href="/accomadations">Accomadations</a></li>
         <li><a <%= typeof title != 'undefined' && title == 'RSVP' ? 'class=selected' : '' %> href="/rsvp">RSVP</a></li>
     </ul>
 </nav>
