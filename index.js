@@ -1,5 +1,9 @@
 const express = require('express')
 const app = express()
+const path = require('path')
+
+var hotels = require('./controllers/hotels.js')
+global.AppRoot = path.resolve(__dirname)
 
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
@@ -21,7 +25,12 @@ app.get('/information', function (req, res) {
 })
 
 app.get('/accomadations', function (req, res) {
-  res.render('accomadations', { title: 'Accomadations' })
+  hotels.retrieveHotels().then(function (hotels) {
+    res.render('accomadations', {
+      title: 'Accomadations',
+      data: hotels
+    })
+  })
 })
 
 app.get('/rsvp', function (req, res) {

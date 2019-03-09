@@ -104,7 +104,7 @@ p a {
 .selected {
     pointer-events: none;
     cursor: default;
-    color: black;
+    color: #ffcd00;
 }
 
 .imgbox {
@@ -127,6 +127,7 @@ p a {
 
 .black-link {
     color: black;
+    font-weight: bold;
 }
 
 /* Stuff added for dropdown */
