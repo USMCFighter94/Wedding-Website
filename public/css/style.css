@@ -170,6 +170,19 @@ p a {
     display: block;
 }
 
+.wedding-party {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.party-member {
+    flex: 1 0 21%;
+    margin: 5px;
+}
+
+
 #wedding-timer {
     font-size: 4.5em;
     margin: 0 0 16px 0;

@@ -1,0 +1,11 @@
+<div class="wedding-party">
+    <% for(var i=0; i < data.length; i++) { %>
+    <div class="party-member">
+        <img src="<%= data[i].imagePath %>" alt="<%= data[i].name %>" class="center-fit">
+        <p>
+            <b><%= data[i].name %></b><br>
+            <i><%= data[i].title %></i>
+        </p>
+    </div>
+    <% } %>
+</div>

@@ -1,8 +1,8 @@
 var fs = require('fs')
 
-exports.retrieveHotels = function () {
+exports.retrieveJson = function (fileName) {
   return new Promise(function (resolve, reject) {
-    fs.readFile(AppRoot + '/config/' + 'hotels.json', 'utf8', function (err, data) {
+    fs.readFile(AppRoot + '/config/' + fileName, 'utf8', function (err, data) {
       if (err) return reject(err)
       resolve(JSON.parse(data))
     })

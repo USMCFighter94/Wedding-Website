@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Kaitlyn Talbot",
+    "title": "Maid of Honor",
+    "imagePath": "/assets/images/party/Kaitlyn.png"
+  },
+  {
+    "name": "Jenna Brevitz",
+    "title": "Bridesmain",
+    "imagePath": "/assets/images/party/Jenna.png"
+  },
+  {
+    "name": "Eva Heydrich",
+    "title": "Bridesmaid",
+    "imagePath": "/assets/images/party/eva.png"
+  },
+  {
+    "name": "Jenny Morehouse",
+    "title": "Bridesmaid",
+    "imagePath": "/assets/images/party/Jenny.png"
+  },
+  {
+    "name": "Eric Smith",
+    "title": "Best Man",
+    "imagePath": "/assets/images/party/Eric.png"
+  },
+  {
+    "name": "TJ Stein",
+    "title": "Groomsman",
+    "imagePath": "/assets/images/party/tj.png"
+  },
+  {
+    "name": "Brandon Duvall",
+    "title": "Groomsman",
+    "imagePath": "/assets/images/party/Brandon.jpg"
+  },
+  {
+    "name": "Kaitlyn Talbot",
+    "title": "Groomsman",
+    "imagePath": "/assets/images/party/Kaitlyn.png"
+  },
+  {
+    "name": "Kaela Hartmann",
+    "title": "Musician/Honorary Bridesmaid",
+    "imagePath": "/assets/images/party/Kaela.png"
+  },
+  {
+    "name": "Elli Lowing",
+    "title": "Flower Girl",
+    "imagePath": "/assets/images/party/Elli.png"
+  },
+  {
+    "name": "Landry Brown",
+    "title": "Ring Bearer",
+    "imagePath": "/assets/images/party/landry.jpg"
+  }
+]

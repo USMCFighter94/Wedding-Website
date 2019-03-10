@@ -2,14 +2,16 @@ const express = require('express')
 const app = express()
 const path = require('path')
 
-var hotels = require('./controllers/hotels.js')
+var readFile = require('./controllers/readFile.js')
 global.AppRoot = path.resolve(__dirname)
 
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
 
 app.get('/', function (req, res) {
-  res.render('index')
+  readFile.retrieveJson('wedding-party.json').then(function (party) {
+    res.render('index', { data: party })
+  })
 })
 
 app.get('/ceremony', function (req, res) {
@@ -25,7 +27,7 @@ app.get('/information', function (req, res) {
 })
 
 app.get('/accomadations', function (req, res) {
-  hotels.retrieveHotels().then(function (hotels) {
+  readFile.retrieveJson('hotels.json').then(function (hotels) {
     res.render('accomadations', {
       title: 'Accomadations',
       data: hotels
