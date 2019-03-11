@@ -4,13 +4,18 @@
 <body>
     <% include templates/nav %>
     <div class="container">
-        <div class="imgbox">
-            <img src="/assets/images/church.jpg" alt="Chapel Hill" class="center-fit">
-        </div>
+      <% include templates/carousel %>
 
+        <div>
         <h1>Hotel Options</h1>
+        <p><i>*Note: These are simply suggestions. No blocks of rooms are reserved</i></p>
+      </div>
+
         <% include templates/hotel %>
     </div>
     <% include templates/footer %>
+
+    <script type='text/javascript' src='/scripts/glide.min.js'></script>
+    <script type='text/javascript' src='/scripts/carousel.js'></script>
 </body>
 </html>

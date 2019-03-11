@@ -1,12 +1,10 @@
 <div class="hotel-list">
     <% for(var i=0; i < data.length; i++) { %>
     <div class="hotel">
-        <p>
-            <b><%= data[i].name %></b><br>
-            <%= data[i].addressLine1 %><br>
-            <%= data[i].addressLine2 %><br>
+            <h2><%= data[i].name %></h2>
+            <p><%= data[i].addressLine1 %><br>
+            <%= data[i].addressLine2 %></p>
             <a href="<%= data[i].link %>" class="black-link"><%= data[i].link %></a>
-        </p>
     </div>
     <% } %>
 </div>

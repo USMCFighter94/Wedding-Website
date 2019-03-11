@@ -33,10 +33,14 @@ app.get('/information', function (req, res) {
 })
 
 app.get('/accommodations', function (req, res) {
-  readFile.retrieveJson('hotels.json').then(function (hotels) {
+  var hotels = readFile.retrieveJson('hotels.json')
+  var images = readFile.retrieveJson('hotel-images.json')
+
+  Promise.all([hotels, images]).then(function (values) {
     res.render('accommodations', {
       title: 'Accommodations',
-      data: hotels
+      data: values[0],
+      images: values[1]
     })
   })
 })
@@ -53,6 +57,6 @@ app.get('/location', function (req, res) {
   res.render('location', { title: 'Location' })
 })
 
-app.listen(80, function () {
+app.listen(3000, function () {
   console.log('App listening on port 80!')
 })

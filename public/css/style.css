@@ -193,6 +193,10 @@ p a {
     width: auto;
 }
 
+.hotel-list {
+  margin-left: 32px;
+}
+
 #wedding-timer {
     font-size: 4.5em;
     margin: 0 0 16px 0;
