@@ -26,10 +26,10 @@ app.get('/information', function (req, res) {
   res.render('information', { title: 'Information' })
 })
 
-app.get('/accomadations', function (req, res) {
+app.get('/accommodations', function (req, res) {
   readFile.retrieveJson('hotels.json').then(function (hotels) {
-    res.render('accomadations', {
-      title: 'Accomadations',
+    res.render('accommodations', {
+      title: 'Accommodations',
       data: hotels
     })
   })
