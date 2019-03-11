@@ -32,7 +32,7 @@
   {
     "name": "Brandon Duvall",
     "title": "Groomsman",
-    "imagePath": "/assets/images/party/Brandon.jpg"
+    "imagePath": "/assets/images/party/Brandon.png"
   },
   {
     "name": "Kaitlyn Talbot",
@@ -52,6 +52,6 @@
   {
     "name": "Landry Brown",
     "title": "Ring Bearer",
-    "imagePath": "/assets/images/party/landry.jpg"
+    "imagePath": "/assets/images/party/Landry.png"
   }
 ]

@@ -134,6 +134,14 @@ p a {
     text-align: center;
 }
 
+/* .glide__slide img {
+    display: block;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+} */
+
+
 /* Stuff added for dropdown */
 
 /* Style the dropdown content (hidden by default) */
