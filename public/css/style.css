@@ -130,6 +130,10 @@ p a {
     font-weight: bold;
 }
 
+.center {
+    text-align: center;
+}
+
 /* Stuff added for dropdown */
 
 /* Style the dropdown content (hidden by default) */
@@ -182,7 +186,6 @@ p a {
     margin: 5px;
 }
 
-
 #wedding-timer {
     font-size: 4.5em;
     margin: 0 0 16px 0;
@@ -205,8 +208,15 @@ p a {
 }
 
 #fiftyfifty-left {
+    border-right: 1px solid black;
+    display: inline-block;
     float: left;
+    margin: 32px auto;
+    text-align: center;
     width: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #fiftyfifty-left > p {
@@ -215,8 +225,15 @@ p a {
 }
 
 #fiftyfifty-right {
+    border-left: 1px solid black;
+    display: inline-block;
     float: right;
+    margin: 32px auto;
+    text-align: center;
     width: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #fiftyfifty-right > p {
