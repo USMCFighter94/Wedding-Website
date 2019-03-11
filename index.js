@@ -57,6 +57,6 @@ app.get('/location', function (req, res) {
   res.render('location', { title: 'Location' })
 })
 
-app.listen(3000, function () {
+app.listen(80, function () {
   console.log('App listening on port 80!')
 })
