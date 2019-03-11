@@ -1,0 +1,11 @@
+<div class="glide imgbox">
+    <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+            <% for(var i=0; i < images.length; i++) { %>
+                <li class="glide__slide">
+                    <img src="<%= images[i].imagePath %>" alt="Engagement Picture <%= i %>" class="center-fit">
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</div>

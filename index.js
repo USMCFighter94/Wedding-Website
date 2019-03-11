@@ -9,8 +9,14 @@ app.use(express.static('public'))
 app.set('view engine', 'ejs')
 
 app.get('/', function (req, res) {
-  readFile.retrieveJson('wedding-party.json').then(function (party) {
-    res.render('index', { data: party })
+  var party = readFile.retrieveJson('wedding-party.json')
+  var images = readFile.retrieveJson('front-page-images.json')
+
+  Promise.all([party, images]).then(function (values) {
+    res.render('index', {
+      data: values[0],
+      images: values[1]
+    })
   })
 })
 

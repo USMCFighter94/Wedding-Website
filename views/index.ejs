@@ -3,9 +3,8 @@
 <% include templates/head %>
 <body>
     <% include templates/nav %>
-    <div class="imgbox">
-        <img src="/assets/images/proposal.jpg" alt="Proposal" class="center-fit">
-    </div>
+    <% include templates/carousel %>
+
     <div class="container">
         <div id="index-left">
             <h2>About The Couple</h2>
@@ -32,5 +31,17 @@
         <% include templates/footer %>
     </div>
     <script type='text/javascript' src='/scripts/timer.js'></script>
+    <script type='text/javascript' src="/scripts/glide.min.js"></script>
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 3,
+            autoplay: 3500,
+            hoverpause: true,
+            arrowRightText: '&rarr;',
+            arrowLeftText: '&larr;'
+        }).mount()
+    </script>
 </body>
 </html>
