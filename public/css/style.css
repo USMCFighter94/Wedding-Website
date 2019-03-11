@@ -134,14 +134,6 @@ p a {
     text-align: center;
 }
 
-/* .glide__slide img {
-    display: block;
-    max-height: 600px;
-    width: auto;
-    height: auto;
-} */
-
-
 /* Stuff added for dropdown */
 
 /* Style the dropdown content (hidden by default) */
@@ -192,6 +184,13 @@ p a {
 .party-member {
     flex: 1 0 21%;
     margin: 5px;
+}
+
+.party-member img {
+    display: block;
+    margin: auto;
+    max-height: 60%;
+    width: auto;
 }
 
 #wedding-timer {
