@@ -183,14 +183,18 @@ p a {
 
 .party-member {
     flex: 1 0 21%;
-    margin: 5px;
+    margin: auto 5px;
 }
 
 .party-member img {
     display: block;
     margin: auto;
-    max-height: 60%;
-    width: auto;
+    max-width: 90%;
+    height: auto;
+}
+
+.party-member p {
+    font-size: 1.5em;
 }
 
 .hotel-list {
