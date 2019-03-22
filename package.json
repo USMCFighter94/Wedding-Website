@@ -4,8 +4,9 @@
   "description": "The Website for the Brevitz-Stein Wedding",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run sass && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --include-path node_modules/ sass/style.scss public/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,8 @@
     "@glidejs/glide": "^3.2.6",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "material-components-web": "^1.0.1",
+    "node-sass": "^4.11.0",
     "npm": "^6.9.0"
   }
 }
