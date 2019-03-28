@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/USMCFighter94/Wedding-Website#readme",
   "dependencies": {
-    "@glidejs/glide": "^3.2.6",
+    "@glidejs/glide": "^3.2.7",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "material-components-web": "^1.0.1",

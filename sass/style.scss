@@ -1,5 +1,8 @@
 @import "@material/textfield/mdc-text-field";
 @import "@material/button/mdc-button";
+@import "@material/form-field/mdc-form-field";
+@import "@material/checkbox/mdc-checkbox";
+@import "@material/radio/mdc-radio";
 
 html {
     background-color: white;
@@ -200,17 +203,13 @@ p a {
   margin-left: 32px;
 }
 
-.name,
-.username,
-.password {
-  display: block;
-  width: 300px;
+.rsvp-field {
   margin: 20px auto;
 }
 
 .button-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 300px;
   margin: auto;
 }
