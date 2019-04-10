@@ -6,11 +6,11 @@
 
     <div class="container">
       <div align="center">
-          <form class="rsvp-form" action="home.html">
+          <form class="rsvp-form"  action="/submit" method="post">
 
             <!-- Name Field -->
               <div class="mdc-text-field mdc-text-field--outlined rsvp-field name">
-                  <input class="mdc-text-field__input" id="name-input">
+                  <input class="mdc-text-field__input" id="name-input" name="name">
                   <div class="mdc-notched-outline">
                       <div class="mdc-notched-outline__leading"></div>
                       <div class="mdc-notched-outline__notch">
@@ -24,7 +24,7 @@
               <!-- Attending Checkbox -->
               <div class="mdc-form-field rsvp-field">
                 <div class="mdc-checkbox">
-                  <input type="checkbox" class="mdc-checkbox__native-control" id="attending-checkbox"/>
+                  <input type="checkbox" class="mdc-checkbox__native-control" id="attending-checkbox" name="attending" value="Yes"/>
                   <div class="mdc-checkbox__background">
                     <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
                       <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
@@ -38,7 +38,7 @@
               <div class="full-rsvp-form">
                 <!-- Number in Party -->
                 <div class="mdc-text-field mdc-text-field--outlined rsvp-field party-num">
-                    <input class="mdc-text-field__input" id="party-num">
+                    <input class="mdc-text-field__input" id="party-num" name="partySize">
                     <div class="mdc-notched-outline">
                         <div class="mdc-notched-outline__leading"></div>
                         <div class="mdc-notched-outline__notch">
@@ -53,7 +53,7 @@
                 <h4 class="radio-title">Please select your dinner(s)</h4>
                 <div class="mdc-form-field rsvp-field food-choice-1">
                   <div class="mdc-radio">
-                    <input class="mdc-radio__native-control" type="radio" id="food-choice" name="food-choice-group">
+                    <input class="mdc-radio__native-control" type="radio" id="food-choice" name="foodChoiceGroup" value="Pot Roast">
                     <div class="mdc-radio__background">
                       <div class="mdc-radio__outer-circle"></div>
                       <div class="mdc-radio__inner-circle"></div>
@@ -64,7 +64,7 @@
 
                 <div class="mdc-form-field rsvp-field food-choice-2">
                   <div class="mdc-radio">
-                    <input class="mdc-radio__native-control" type="radio" id="food-choice-2" name="food-choice-group">
+                    <input class="mdc-radio__native-control" type="radio" id="food-choice-2" name="foodChoiceGroup" value="Raviloi">
                     <div class="mdc-radio__background">
                       <div class="mdc-radio__outer-circle"></div>
                       <div class="mdc-radio__inner-circle"></div>
@@ -79,7 +79,7 @@
 
                 <div class="mdc-form-field rsvp-field dietary-choice-1">
                   <div class="mdc-radio">
-                    <input class="mdc-radio__native-control" type="radio" id="dietary-choice-1" name="dietary-choice-group">
+                    <input class="mdc-radio__native-control" type="radio" id="dietary-choice-1" name="dietaryChoiceGroup" value="Diet Restricted">
                     <div class="mdc-radio__background">
                       <div class="mdc-radio__outer-circle"></div>
                       <div class="mdc-radio__inner-circle"></div>
@@ -90,7 +90,7 @@
 
                 <div class="mdc-form-field rsvp-field dietary-choice-2">
                   <div class="mdc-radio">
-                    <input class="mdc-radio__native-control" type="radio" id="dietary-choice-2" name="dietary-choice-group">
+                    <input class="mdc-radio__native-control" type="radio" id="dietary-choice-2" name="dietaryChoiceGroup" value="Not Diet Restricted">
                     <div class="mdc-radio__background">
                       <div class="mdc-radio__outer-circle"></div>
                       <div class="mdc-radio__inner-circle"></div>
@@ -101,7 +101,7 @@
 
                 <!-- Dietary Restriction Field -->
                 <div class="mdc-text-field mdc-text-field--outlined rsvp-field diet-restriction" id="diet-restriction">
-                    <input class="mdc-text-field__input" id="diet-restriction-input">
+                    <input class="mdc-text-field__input" id="diet-restriction-input" name="dietRestrictionType">
                     <div class="mdc-notched-outline">
                         <div class="mdc-notched-outline__leading"></div>
                         <div class="mdc-notched-outline__notch">
@@ -114,7 +114,7 @@
                 <br>
                 <!-- Date Night Idea Field -->
                 <div class="mdc-text-field mdc-text-field--outlined rsvp-field date-night">
-                    <input class="mdc-text-field__input" id="date-night-input">
+                    <input class="mdc-text-field__input" id="date-night-input" name="dateNightIdea">
                     <div class="mdc-notched-outline">
                         <div class="mdc-notched-outline__leading"></div>
                         <div class="mdc-notched-outline__notch">

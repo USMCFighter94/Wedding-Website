@@ -3,9 +3,12 @@ const app = express()
 const path = require('path')
 
 var readFile = require('./controllers/readFile.js')
+var submit = require('./controllers/submit.js')
 global.AppRoot = path.resolve(__dirname)
 
 app.use(express.static('public'))
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
 app.set('view engine', 'ejs')
 
 app.get('/', function (req, res) {
@@ -48,6 +51,8 @@ app.get('/accommodations', function (req, res) {
 app.get('/rsvp', function (req, res) {
   res.render('rsvp', { title: 'RSVP' })
 })
+
+app.post('/submit', submit.handleSubmission)
 
 app.get('/registry', function (req, res) {
   res.render('registry', { title: 'Registry' })
