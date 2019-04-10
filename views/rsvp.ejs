@@ -6,7 +6,7 @@
 
     <div class="container">
       <div align="center">
-          <form action="home.html">
+          <form class="rsvp-form" action="home.html">
 
             <!-- Name Field -->
               <div class="mdc-text-field mdc-text-field--outlined rsvp-field name">
@@ -35,58 +35,107 @@
                 <label for="attending-checkbox">Attending?</label>
               </div>
 
-              <br>
-              <!-- Number in Party -->
-              <div class="mdc-text-field mdc-text-field--outlined rsvp-field party-num">
-                  <input class="mdc-text-field__input" id="party-num">
-                  <div class="mdc-notched-outline">
-                      <div class="mdc-notched-outline__leading"></div>
-                      <div class="mdc-notched-outline__notch">
-                          <label class="mdc-floating-label">How many will be in your party?</label>
+              <div class="full-rsvp-form">
+                <!-- Number in Party -->
+                <div class="mdc-text-field mdc-text-field--outlined rsvp-field party-num">
+                    <input class="mdc-text-field__input" id="party-num">
+                    <div class="mdc-notched-outline">
+                        <div class="mdc-notched-outline__leading"></div>
+                        <div class="mdc-notched-outline__notch">
+                            <label class="mdc-floating-label">How many will be in your party?</label>
+                        </div>
+                        <div class="mdc-notched-outline__trailing"></div>
+                    </div>
+                </div>
+
+                <br>
+                <!-- Food Choices -->
+                <h4 class="radio-title">Please select your dinner(s)</h4>
+                <div class="mdc-form-field rsvp-field food-choice-1">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" type="radio" id="food-choice" name="food-choice-group">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                  </div>
+                  <label for="food-choice"><b>Yankee Style Pot Roast</b> - Simmered all day, Zinfandel Wine Sauce</label>
+                </div>
+
+                <div class="mdc-form-field rsvp-field food-choice-2">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" type="radio" id="food-choice-2" name="food-choice-group">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                  </div>
+                  <label for="food-choice-2"><b>Ravioli Florentine</b> - Cheese & Spinach Filled Ravioli, Marinara Sauce, Parmesan Cheese</label>
+                </div>
+
+                <br>
+                <!-- Dietary Needs Checkbox -->
+                <h4 class="radio-title">Do you have any dietary restrictions?</h4>
+
+                <div class="mdc-form-field rsvp-field dietary-choice-1">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" type="radio" id="dietary-choice-1" name="dietary-choice-group">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                  </div>
+                  <label for="dietary-choice-1">Yes</label>
+                </div>
+
+                <div class="mdc-form-field rsvp-field dietary-choice-2">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" type="radio" id="dietary-choice-2" name="dietary-choice-group">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                  </div>
+                  <label for="dietary-choice-2">No</label>
+                </div>
+
+                <!-- Dietary Restriction Field -->
+                <div class="mdc-text-field mdc-text-field--outlined rsvp-field diet-restriction" id="diet-restriction">
+                    <input class="mdc-text-field__input" id="diet-restriction-input">
+                    <div class="mdc-notched-outline">
+                        <div class="mdc-notched-outline__leading"></div>
+                        <div class="mdc-notched-outline__notch">
+                            <label class="mdc-floating-label">Please Specify</label>
+                        </div>
+                        <div class="mdc-notched-outline__trailing"></div>
                       </div>
-                      <div class="mdc-notched-outline__trailing"></div>
-                  </div>
-              </div>
-
-              <br>
-              <!-- Food Choices -->
-              <div class="mdc-form-field rsvp-field food-choice-1">
-                <div class="mdc-radio">
-                  <input class="mdc-radio__native-control" type="radio" id="food-choice" name="radios" checked>
-                  <div class="mdc-radio__background">
-                    <div class="mdc-radio__outer-circle"></div>
-                    <div class="mdc-radio__inner-circle"></div>
-                  </div>
                 </div>
-                <label for="food-choice">Food 1</label>
-              </div>
 
-              <div class="mdc-form-field rsvp-field food-choice-2">
-                <div class="mdc-radio">
-                  <input class="mdc-radio__native-control" type="radio" id="food-choice-2" name="radios">
-                  <div class="mdc-radio__background">
-                    <div class="mdc-radio__outer-circle"></div>
-                    <div class="mdc-radio__inner-circle"></div>
-                  </div>
+                <br>
+                <!-- Date Night Idea Field -->
+                <div class="mdc-text-field mdc-text-field--outlined rsvp-field date-night">
+                    <input class="mdc-text-field__input" id="date-night-input">
+                    <div class="mdc-notched-outline">
+                        <div class="mdc-notched-outline__leading"></div>
+                        <div class="mdc-notched-outline__notch">
+                            <label class="mdc-floating-label">Share your favorite date night idea!</label>
+                        </div>
+                        <div class="mdc-notched-outline__trailing"></div>
+                      </div>
                 </div>
-                <label for="food-choice-2">Food 2</label>
-              </div>
+            </div>
+
 
               <div class="button-container">
-                  <button type="button" class="mdc-button cancel">
+                  <button class="mdc-button mdc-button--raised submit">
                       <span class="mdc-button__label">
-                          Cancel
-                      </span>
-                  </button>
-                  <button class="mdc-button mdc-button--raised next">
-                      <span class="mdc-button__label">
-                          Next
+                          Submit
                       </span>
                   </button>
               </div>
           </form>
 
-          <h4><i>Please RSVP by May 1st</i></h4>
+          <h2><i>Please RSVP by May 1st</i></h2>
       </div>
         <% include templates/footer %>
     </div>

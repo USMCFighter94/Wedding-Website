@@ -2233,8 +2233,23 @@ p a {
 .hotel-list {
   margin-left: 32px; }
 
+.rsvp-form {
+  width: 80%; }
+
 .rsvp-field {
-  margin: 20px auto; }
+  width: 75%;
+  margin: 8px auto; }
+
+.radio-title {
+  text-align: left;
+  width: 75%; }
+
+.full-rsvp-form {
+  display: none; }
+
+#diet-restriction {
+  position: relative;
+  display: none; }
 
 .button-container {
   display: flex;

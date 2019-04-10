@@ -1,12 +1,31 @@
 mdc.textField.MDCTextField.attachTo(document.querySelector('.name'))
 mdc.textField.MDCTextField.attachTo(document.querySelector('.party-num'))
+mdc.textField.MDCTextField.attachTo(document.querySelector('.date-night'))
+mdc.textField.MDCTextField.attachTo(document.querySelector('.diet-restriction'))
 
-mdc.ripple.MDCRipple.attachTo(document.querySelector('.cancel'))
-mdc.ripple.MDCRipple.attachTo(document.querySelector('.next'))
+mdc.ripple.MDCRipple.attachTo(document.querySelector('.submit'))
 
-mdc.form-field.MDCFormField.attachTo(document.querySelector('.mdc-form-field'))
+mdc.formField.MDCFormField.attachTo(document.querySelector('.mdc-form-field'))
 mdc.checkbox.MDCCheckbox.attachTo(document.querySelector('.mdc-checkbox'))
 mdc.radio.MDCRadio.attachTo(document.querySelector('.mdc-radio'))
 
-formField.input = radio
-formField.input = checkbox
+// formField.input = radio
+// formField.input = checkbox
+
+document.getElementById('attending-checkbox').addEventListener('click', function(){
+    var form = document.querySelector('.full-rsvp-form')
+    
+    if (form.style.display == 'block') {
+      form.style.display = 'none'
+    } else {
+      form.style.display = 'block'
+    }
+})
+
+document.getElementById('dietary-choice-1').addEventListener('click', function(){
+    document.querySelector('.diet-restriction').style.display = 'block';
+})
+
+document.getElementById('dietary-choice-2').addEventListener('click', function(){
+    document.querySelector('.diet-restriction').style.display = 'none';
+})
