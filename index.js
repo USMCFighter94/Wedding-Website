@@ -62,6 +62,10 @@ app.get('/location', function (req, res) {
   res.render('location', { title: 'Location' })
 })
 
+app.get('/finished', function (req, res) {
+  res.render('finished', { title: 'Finished' })
+})
+
 app.listen(80, function () {
   console.log('App listening on port 80!')
 })

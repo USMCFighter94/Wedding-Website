@@ -7,5 +7,5 @@ exports.handleSubmission = function(req, res) {
   string += "Restrcited: " + req.body.dietRestrictionType + "<br>";
   string += "Date Night Idea: " + req.body.dateNightIdea + "<br>";
 
-  res.send(string);
+  res.render('finished');
 }
