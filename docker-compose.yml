@@ -1,12 +1,29 @@
-
 version: '3'
 services:
-  www:
-    container_name: 151--testy44
-
+  web:
+    image: node:10-alpine
+    container_name: web
     volumes:
-      - /opt/app/:/opt/app/
+      - .:/opt/app/
+      - /opt/app/node_modules/
     ports:
-      - "80:80"
-    build:
-      context: .
+      - '3000:3000'
+    links:
+      - postgres
+    env_file:
+      - db.env
+    build: .
+    command: "npm start"
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:11-alpine
+    container_name: db
+    volumes:
+      - /opt/app/db/:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - '5432:5432'
+    env_file:
+      - db.env

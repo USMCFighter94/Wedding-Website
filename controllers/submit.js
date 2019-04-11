@@ -1,11 +1,37 @@
-exports.handleSubmission = function(req, res) {
-  var string = "NAME IS: " + req.body.name + "<br>";
-  string += "Attending??: " + req.body.attending + "<br>";
-  string += "SIZE: " + req.body.partySize + "<br>";
-  string += "FOOD CHOICE: " + req.body.foodChoiceGroup + "<br>";
-  string += "Diet Restriction: " + req.body.dietaryChoiceGroup + "<br>";
-  string += "Restrcited: " + req.body.dietRestrictionType + "<br>";
-  string += "Date Night Idea: " + req.body.dateNightIdea + "<br>";
+const Pool = require('pg').Pool
+const pool = new Pool({
+  user: process.env.POSTGRES_USER,
+  host: process.env.POSTGRES_HOST,
+  database: process.env.POSTGRES_DB,
+  password: process.env.POSTGRES_PASSWORD,
+  port: process.env.POSTGRES_PORT
+})
 
-  res.render('finished');
+const handleSubmission = (request, response) => {
+  const name = request.body.name
+  const attending = request.body.attending
+  const partySize = request.body.partySize
+  const food1 = request.body.food1
+  const food2 = request.body.food2
+  const food3 = request.body.food3
+  const food4 = request.body.food4
+  const dietRestricted = request.body.dietaryChoiceGroup
+  const restriction = request.body.dietRestrictionType
+  const dateIdea = request.body.dateNightIdea
+
+  pool.query('INSERT INTO rsvp' +
+  '(name, attending, size, food1, food2, food3, food4, dietRestricted, restriction, dateIdea, submissionTime)' +
+  'VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)',
+  [name, attending, partySize, food1, food2, food3, food4, dietRestricted, restriction, dateIdea, Date("2015-03-25T12:00:00-06:30")],
+  (error, results) => {
+    if (error) {
+      throw error
+      response.render('error');
+    }
+    response.render('finished');
+  })
+}
+
+module.exports = {
+  handleSubmission,
 }

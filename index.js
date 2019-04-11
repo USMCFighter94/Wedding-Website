@@ -2,8 +2,9 @@ const express = require('express')
 const app = express()
 const path = require('path')
 
-var readFile = require('./controllers/readFile.js')
-var submit = require('./controllers/submit.js')
+const readFile = require('./controllers/readFile.js')
+const submit = require('./controllers/submit.js')
+
 global.AppRoot = path.resolve(__dirname)
 
 app.use(express.static('public'))
@@ -64,6 +65,10 @@ app.get('/location', function (req, res) {
 
 app.get('/finished', function (req, res) {
   res.render('finished', { title: 'Finished' })
+})
+
+app.get('/error', function (req, res) {
+  res.render('error', { title: 'Error' })
 })
 
 app.listen(80, function () {

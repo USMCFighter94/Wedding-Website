@@ -10,7 +10,7 @@
 
             <!-- Name Field -->
               <div class="mdc-text-field mdc-text-field--outlined rsvp-field name">
-                  <input class="mdc-text-field__input" id="name-input" name="name">
+                  <input type="text" class="mdc-text-field__input" id="name-input" name="name">
                   <div class="mdc-notched-outline">
                       <div class="mdc-notched-outline__leading"></div>
                       <div class="mdc-notched-outline__notch">
@@ -38,11 +38,11 @@
               <div class="full-rsvp-form">
                 <!-- Number in Party -->
                 <div class="mdc-text-field mdc-text-field--outlined rsvp-field party-num">
-                    <input class="mdc-text-field__input" id="party-num" name="partySize">
+                    <input type="number" class="mdc-text-field__input" id="party-num" name="partySize">
                     <div class="mdc-notched-outline">
                         <div class="mdc-notched-outline__leading"></div>
                         <div class="mdc-notched-outline__notch">
-                            <label class="mdc-floating-label">How many will be in your party?</label>
+                            <label class="mdc-floating-label">How many will be in your party? (One plus one is allowed per invite)</label>
                         </div>
                         <div class="mdc-notched-outline__trailing"></div>
                     </div>
@@ -50,27 +50,49 @@
 
                 <br>
                 <!-- Food Choices -->
-                <h4 class="radio-title">Please select your dinner(s)</h4>
-                <div class="mdc-form-field rsvp-field food-choice-1">
-                  <div class="mdc-radio">
-                    <input class="mdc-radio__native-control" type="radio" id="food-choice" name="foodChoiceGroup" value="Pot Roast">
-                    <div class="mdc-radio__background">
-                      <div class="mdc-radio__outer-circle"></div>
-                      <div class="mdc-radio__inner-circle"></div>
+                <h4 class="radio-title">Please select your dinner(s) (# per selection)</h4>
+                <div class="mdc-text-field mdc-text-field--outlined rsvp-field food-1">
+                    <input type="number" class="mdc-text-field__input" id="food-1" name="food1">
+                    <div class="mdc-notched-outline">
+                        <div class="mdc-notched-outline__leading"></div>
+                        <div class="mdc-notched-outline__notch">
+                            <label class="mdc-floating-label"><b>Yankee Style Pot Roast</b> - Simmered all day, Zinfandel Wine Sauce</label>
+                        </div>
+                        <div class="mdc-notched-outline__trailing"></div>
                     </div>
-                  </div>
-                  <label for="food-choice"><b>Yankee Style Pot Roast</b> - Simmered all day, Zinfandel Wine Sauce</label>
                 </div>
 
-                <div class="mdc-form-field rsvp-field food-choice-2">
-                  <div class="mdc-radio">
-                    <input class="mdc-radio__native-control" type="radio" id="food-choice-2" name="foodChoiceGroup" value="Raviloi">
-                    <div class="mdc-radio__background">
-                      <div class="mdc-radio__outer-circle"></div>
-                      <div class="mdc-radio__inner-circle"></div>
+                <div class="mdc-text-field mdc-text-field--outlined rsvp-field food-2">
+                    <input type="number" class="mdc-text-field__input" id="food-2" name="food2">
+                    <div class="mdc-notched-outline">
+                        <div class="mdc-notched-outline__leading"></div>
+                        <div class="mdc-notched-outline__notch">
+                            <label class="mdc-floating-label"><b>Ravioli Florentine</b> - Cheese & Spinach Filled Ravioli, Marinara Sauce, Parmesan Cheese</label>
+                        </div>
+                        <div class="mdc-notched-outline__trailing"></div>
                     </div>
-                  </div>
-                  <label for="food-choice-2"><b>Ravioli Florentine</b> - Cheese & Spinach Filled Ravioli, Marinara Sauce, Parmesan Cheese</label>
+                </div>
+
+                <div class="mdc-text-field mdc-text-field--outlined rsvp-field food-3">
+                    <input type="number" class="mdc-text-field__input" id="food-3" name="food3">
+                    <div class="mdc-notched-outline">
+                        <div class="mdc-notched-outline__leading"></div>
+                        <div class="mdc-notched-outline__notch">
+                            <label class="mdc-floating-label"><b>Tuscan Chicken</b> - Flour Dusted, Sautéed, Tomato, Madeira Wine Sauce Asparagus, Mozzarella</label>
+                        </div>
+                        <div class="mdc-notched-outline__trailing"></div>
+                    </div>
+                </div>
+
+                <div class="mdc-text-field mdc-text-field--outlined rsvp-field food-4">
+                    <input type="number" class="mdc-text-field__input" id="food-4" name="food4">
+                    <div class="mdc-notched-outline">
+                        <div class="mdc-notched-outline__leading"></div>
+                        <div class="mdc-notched-outline__notch">
+                            <label class="mdc-floating-label"><b>Kid's Meal</b> - Chicken Tenders & Fries</label>
+                        </div>
+                        <div class="mdc-notched-outline__trailing"></div>
+                    </div>
                 </div>
 
                 <br>
@@ -101,7 +123,7 @@
 
                 <!-- Dietary Restriction Field -->
                 <div class="mdc-text-field mdc-text-field--outlined rsvp-field diet-restriction" id="diet-restriction">
-                    <input class="mdc-text-field__input" id="diet-restriction-input" name="dietRestrictionType">
+                    <input type="text" class="mdc-text-field__input" id="diet-restriction-input" name="dietRestrictionType">
                     <div class="mdc-notched-outline">
                         <div class="mdc-notched-outline__leading"></div>
                         <div class="mdc-notched-outline__notch">
@@ -114,7 +136,7 @@
                 <br>
                 <!-- Date Night Idea Field -->
                 <div class="mdc-text-field mdc-text-field--outlined rsvp-field date-night">
-                    <input class="mdc-text-field__input" id="date-night-input" name="dateNightIdea">
+                    <input type="text" class="mdc-text-field__input" id="date-night-input" name="dateNightIdea">
                     <div class="mdc-notched-outline">
                         <div class="mdc-notched-outline__leading"></div>
                         <div class="mdc-notched-outline__notch">
@@ -135,7 +157,7 @@
               </div>
           </form>
 
-          <h2><i>Please RSVP by May 1st</i></h2>
+          <h2><i>Please RSVP by May 10th</i></h2>
       </div>
         <% include templates/footer %>
     </div>

@@ -24,6 +24,7 @@
     "express": "^4.16.4",
     "material-components-web": "^1.0.1",
     "node-sass": "^4.11.0",
-    "npm": "^6.9.0"
+    "npm": "^6.9.0",
+    "pg": "^7.9.0"
   }
 }
