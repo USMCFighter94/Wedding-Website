@@ -148,6 +148,21 @@ p a {
     object-fit: cover;
 }
 
+.row {
+  align-items: center;
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  vertical-align: middle;
+}
+
+.medium-image {
+  max-width: 50%;
+  height: auto;
+}
+
 /* Stuff added for dropdown */
 
 /* Style the dropdown content (hidden by default) */
