@@ -2336,6 +2336,12 @@ p a {
 .center {
   text-align: center; }
 
+.nav-image {
+  max-width: 100%;
+  max-height: 8vh;
+  margin: auto;
+  object-fit: cover; }
+
 /* Stuff added for dropdown */
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
