@@ -1,15 +1,13 @@
-FROM node:10-alpine
+FROM postgres
+COPY init.sql /docker-entrypoint-initdb.d/10-init.sql
+
+FROM node:11.13-alpine
 
 WORKDIR /opt/app
 
 ENV PORT=80
 
-FROM postgres
-COPY init.sql /docker-entrypoint-initdb.d/10-init.sql
-
 COPY package.json .
-RUN echo 'npm install --quiet --production' >> /boot.sh
+RUN npm install --quiet --production
 
 COPY . .
-
-CMD sh /boot.sh
