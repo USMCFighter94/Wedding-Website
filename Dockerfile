@@ -5,6 +5,5 @@ WORKDIR /opt/app
 ENV PORT=80
 
 COPY package.json .
-RUN npm install --quiet --production
 
-COPY . .
+RUN npm install --quiet --production
