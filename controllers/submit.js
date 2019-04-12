@@ -1,11 +1,10 @@
-const Pool = require('pg').Pool
-const pool = new Pool({
-  user: process.env.POSTGRES_USER,
-  host: process.env.POSTGRES_HOST,
-  database: process.env.POSTGRES_DB,
-  password: process.env.POSTGRES_PASSWORD,
-  port: process.env.POSTGRES_PORT
-})
+var firebase = require("firebase/app");
+require("firebase/database");
+
+var db = require('./db.js');
+var config = db.firebaseConfig;
+
+firebase.initializeApp(config);
 
 const handleSubmission = (request, response) => {
   const name = request.body.name
@@ -19,17 +18,23 @@ const handleSubmission = (request, response) => {
   const restriction = request.body.dietRestrictionType
   const dateIdea = request.body.dateNightIdea
 
-  pool.query('INSERT INTO rsvp' +
-  '(name, attending, size, food1, food2, food3, food4, dietRestricted, restriction, dateIdea, submissionTime)' +
-  'VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)',
-  [name, attending, partySize, food1, food2, food3, food4, dietRestricted, restriction, dateIdea, Date("2015-03-25T12:00:00-06:30")],
-  (error, results) => {
-    if (error) {
-      throw error
-      response.render('error');
-    }
+  firebase.database().ref().child('rsvps/' + name).set({
+    name: name,
+    attending: attending,
+    size : partySize,
+    pot_roast: food1,
+    ravioli: food2,
+    chicken: food3,
+    kids: food4,
+    diet: dietRestricted,
+    restriction: restriction,
+    dateIdea: dateIdea
+  }).then(function() {
     response.render('finished');
-  })
+  }).catch(function(err) {
+    console.log('error', err);
+    response.render('error');
+  });
 }
 
 module.exports = {
